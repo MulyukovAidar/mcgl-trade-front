@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import { Button, Container } from '@material-ui/core';
 import './App.css';
+import { Header } from './components/Header';
+import { ItemSection } from './components/ItemSection';
+import { SearchBar } from './components/SearchBar';
+import Grid from '@material-ui/core/Grid';
+import TradeTable from './components/TradeTable';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TradeTable></TradeTable>
+      {/* <SearchBar /> */}
+      {/* <Grid container fluid spacing={2} my={4}>
+        <Grid item xs={6}>
+          <span>Что я хочу</span>
+          <ItemSection></ItemSection>
+          <ItemSection></ItemSection>
+          <ItemSection></ItemSection>
+          <ItemSection></ItemSection>
+        </Grid>
+        <Grid item xs={6}>
+          <span>Что у меня есть</span>
+          <ItemSection></ItemSection>
+          <ItemSection></ItemSection>
+          <ItemSection></ItemSection>
+          <ItemSection></ItemSection>
+          <ItemSection></ItemSection>
+        </Grid>
+        <Grid container justify="center" xs={12}>
+          <Button variant="outlined" fullWidth pt={6}>
+            Искать
+          </Button>
+        </Grid>
+      </Grid> */}
     </div>
   );
 }
