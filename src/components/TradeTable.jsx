@@ -10,6 +10,9 @@ import { Box, Grid } from "@material-ui/core";
 import Avatar from '@material-ui/core/Avatar'
 import Typography from '@material-ui/core/Typography';
 import { ExchangeRate } from "./ExchangeRate";
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+
 const sell = {
   id: 264,
   name: "Алмаз",
@@ -36,12 +39,15 @@ const tradeDeal = {
 export default function TradeTable(props) {
   return (
     <Grid container fluid>
+
+
       <Box component={Grid} border={1} container fluid direction="row" justify="space-between">
         <Grid item xs={3} direction="column">
           <ExchangeRate tradeDeal={tradeDeal} />
         </Grid>
-        <Grid container item xs={6} spacing={8}>
-          <Grid item xs={6}>
+        <Grid container item xs={6}>
+
+          <Grid item xs={5}>
             <Typography align="right">Продам</Typography>
             <Typography align="right">
               {tradeDeal.sell.name}
@@ -53,7 +59,11 @@ export default function TradeTable(props) {
               {tradeDeal.sellq}
             </Typography>
           </Grid>
-          <Grid item xs={6}>
+          <Grid container item xs={2} mt="10" justify="center" alignItems="center">
+            <ArrowBackIcon />
+            <ArrowForwardIcon />
+          </Grid>
+          <Grid item xs={5}>
             <Typography align="left">Куплю</Typography>
             <Typography align="left">
               {tradeDeal.buyq}
@@ -63,7 +73,7 @@ export default function TradeTable(props) {
                 style={{ backgroundPosition: tradeDeal.buy.position }}>
               </div>
               {tradeDeal.buy.name}
-              </Typography>
+            </Typography>
           </Grid>
 
         </Grid>
