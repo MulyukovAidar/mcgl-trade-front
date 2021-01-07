@@ -100,3 +100,8 @@ body {
   zoom: 0.69;
   -moz-transform: scale(0.69);
 }
+
+.tradeDetails{
+  width: 40% !important;
+  margin: 8px;
+}
