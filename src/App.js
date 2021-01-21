@@ -5,12 +5,13 @@ import { ItemSection } from './components/ItemSection';
 import { SearchBar } from './components/SearchBar';
 import Grid from '@material-ui/core/Grid';
 import TradeTable from './components/TradeTable';
+import TradeForm from './components/TradeForm';
 
 function App() {
   return (
     <div className="App">
-      <TradeTable></TradeTable>
       {/* <SearchBar /> */}
+      {/* <TradeTable>  </TradeTable> */}
       {/* <Grid container fluid spacing={2} my={4}>
         <Grid item xs={6}>
           <span>Что я хочу</span>
@@ -33,6 +34,7 @@ function App() {
           </Button>
         </Grid>
       </Grid> */}
+      <TradeForm/>
     </div>
   );
 }

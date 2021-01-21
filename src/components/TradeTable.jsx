@@ -43,14 +43,11 @@ export default function TradeTable(props) {
   }
   return (
     <Grid container fluid>
-
-
       <Box component={Grid} border={1} container fluid direction="row" justify="space-between">
         <Grid item xs={3} direction="column">
           <ExchangeRate tradeDeal={tradeDeal} />
         </Grid>
         <Grid container item xs={6}>
-
           <Grid item xs={5}>
             <Typography align="right">{`У меня есть на ${tradeDeal.sellServer}`}</Typography>
             <Typography align="right">

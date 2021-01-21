@@ -101,7 +101,11 @@ body {
   -moz-transform: scale(0.69);
 }
 
-.tradeDetails{
+.tradeDetails {
   width: 40% !important;
   margin: 8px;
+}
+
+.tradeFormPadding {
+  padding: 0 4px !important;
 }
